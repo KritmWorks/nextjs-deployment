@@ -42,20 +42,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Before running Docker Compose, update the `docker-compose.yml` file:
 
-1. **Set your Docker image name** (line 3):
-   ```yaml
-   image: "ghcr.io/your-username/your-app:latest"
-   ```
-   Replace with your GitHub Container Registry image or Docker Hub image.
-
-2. **Customize environment variables** (optional):
+1. **Customize environment variables** (optional):
    ```yaml
    environment:
      - NODE_ENV=production  # or development/staging
      - PORT=3000           # change if using different port
    ```
 
-3. **Adjust ports if needed** (optional):
+2. **Adjust ports if needed** (optional):
    ```yaml
    ports:
      - "3000:3000"  # host:container
